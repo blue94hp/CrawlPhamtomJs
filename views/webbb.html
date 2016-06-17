@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+@import url("css/style.css");
+
+
+</style>
+
+<div id="maincontainer">
+
+<div id="topsection"><div class="innertube"><img src="images/icons.gif" href="google.com" ></a></div></div>
+
+<div id="contentwrapper">
+<div id="contentcolumn">
+<div class="innertube">
+<div id="s_content">
+<form name="search1" method="get" action="" class = "s_box">
+<div class="s_box1">
+<input type="radio" value="mua"  name="search"  checked>Tin ban OTO
+ <input type="radio" value="ban"  name="search" >Tin mua OTO
+ </div>
+ <input type="text" name="s_text" class="s_box2" />
+ <input type="submit" class="s_button" value="Tìm"/>
+
+
+</form>
+</div>
+
+<div id="main_content">
+<div class="c_item">Tin ban xe</div>
+<%for(var i=0;i<20;i++){%>
+<%if(i%2==0){%>
+	<div class="car_item1">
+<%}%>
+<%if(i%2==1){%>
+	<div class="car_item2">
+<%}%>
+<div class="ci1">
+<%if(cars[i].tinh_trang == "Xe đã dùng"){%>
+	Xe Cũ
+	<%}%>
+<%if(cars[i].tinh_trang == "Xe mới"){%>
+	Xe Mới
+	<%}%>
+ - <%=cars[i].nam_sx%></div>
+<div class="ci2"><a href="car?url=<%=cars[i].url%>"><%= cars[i].ten_xe %></a></div>
+<div class="ci3"><%= cars[i].gia_VND%> Triệu </div>
+<div class="ci4"><%=cars[i].lien_he.area%></div>
+<div class="ci5"><img src="images/a.jpg" height="70"/></div>
+<div class="ci69">
+<div class="ci6">*Xe <%=cars[i].xuat_xu.toLowerCase()%>, màu <%=cars[i].mau_ngoai_that.toLowerCase()%>, máy <%=cars[i].nhien_lieu.toLowerCase()%>, <%=cars[i].hop_so.toLowerCase()%>, ... 
+</div><div class="ci9">
+<%=cars[i].thong_tin_mo_ta.slice(0,60)%> ...
+</div>
+</div>
+<div class="ci7">Liên hệ: <%=cars[i].lien_he.name%>
+<%=cars[i].lien_he.address%> 
+</div>
+<div class="ci8">SĐT: <%=cars[i].lien_he.phone_1%>-<%=cars[i].lien_he.phone_2%>
+</div>
+</div>
+<%};%>
+<!-- <div class="car_item2">
+<div class="ci1">Cũ/mới</div>
+<div class="ci2">Tên</div>
+<div class="ci3">Giá</div>
+<div class="ci4">Nơi bán</div>
+<div class="ci5">Ảnh</div>
+<div class="ci69">
+<div class="ci6">Thông số</div>
+<div class="ci9">Mô tả</div>
+</div>
+<div class="ci7">Liên hệ</div>
+<div class="ci8">SĐT</div>
+</div> -->
+<!--  -->
+<!-- <div class="car_item1">
+<div class="ci1">Cũ/mới</div>
+<div class="ci2">Tên</div>
+<div class="ci3">Giá</div>
+<div class="ci4">Nơi bán</div>
+<div class="ci5">Ảnh</div>
+<div class="ci69">
+<div class="ci6">Thông số</div>
+<div class="ci9">Mô tả</div>
+</div>
+<div class="ci7">Liên hệ</div>
+<div class="ci8">SĐT</div>
+</div>
+<div class="car_item2">
+<div class="ci1">Cũ/mới</div>
+<div class="ci2">Tên</div>
+<div class="ci3">Giá</div>
+<div class="ci4">Nơi bán</div>
+<div class="ci5">Ảnh</div>
+<div class="ci69">
+<div class="ci6">Thông số</div>
+<div class="ci9">Mô tả</div>
+</div>
+<div class="ci7">Liên hệ</div>
+<div class="ci8">SĐT</div>
+</div>
+
+<div class="car_item1">
+<div class="ci1">Cũ/mới</div>
+<div class="ci2">Tên</div>
+<div class="ci3">Giá</div>
+<div class="ci4">Nơi bán</div>
+<div class="ci5">Ảnh</div>
+<div class="ci69">
+<div class="ci6">Thông số</div>
+<div class="ci9">Mô tả</div>
+</div>
+<div class="ci7">Liên hệ</div>
+<div class="ci8">SĐT</div>
+</div>
+<div class="car_item2">
+<div class="ci1">Cũ/mới</div>
+<div class="ci2">Tên</div>
+<div class="ci3">Giá</div>
+<div class="ci4">Nơi bán</div>
+<div class="ci5">Ảnh</div>
+<div class="ci69">
+<div class="ci6">Thông số</div>
+<div class="ci9">Mô tả</div>
+</div>
+<div class="ci7">Liên hệ</div>
+<div class="ci8">SĐT</div>
+</div>
+<div class="car_item1">
+<div class="ci1">Cũ/mới</div>
+<div class="ci2">Tên</div>
+<div class="ci3">Giá</div>
+<div class="ci4">Nơi bán</div>
+<div class="ci5">Ảnh</div>
+<div class="ci69">
+<div class="ci6">Thông số</div>
+<div class="ci9">Mô tả</div>
+</div>
+<div class="ci7">Liên hệ</div>
+<div class="ci8">SĐT</div>
+</div>
+<div class="car_item2">
+<div class="ci1">Cũ/mới</div>
+<div class="ci2">Tên</div>
+<div class="ci3">Giá</div>
+<div class="ci4">Nơi bán</div>
+<div class="ci5">Ảnh</div>
+<div class="ci69">
+<div class="ci6">Thông số</div>
+<div class="ci9">Mô tả</div>
+</div>
+<div class="ci7">Liên hệ</div>
+<div class="ci8">SĐT</div>
+</div>
+<div class="car_item1">
+<div class="ci1">Cũ/mới</div>
+<div class="ci2">Tên</div>
+<div class="ci3">Giá</div>
+<div class="ci4">Nơi bán</div>
+<div class="ci5">Ảnh</div>
+<div class="ci69">
+<div class="ci6">Thông số</div>
+<div class="ci9">Mô tả</div>
+</div>
+<div class="ci7">Liên hệ</div>
+<div class="ci8">SĐT</div>
+</div>
+<div class="car_item2">
+<div class="ci1">Cũ/mới</div>
+<div class="ci2">Tên</div>
+<div class="ci3">Giá</div>
+<div class="ci4">Nơi bán</div>
+<div class="ci5">Ảnh</div>
+<div class="ci69">
+<div class="ci6">Thông số</div>
+<div class="ci9">Mô tả</div>
+</div>
+<div class="ci7">Liên hệ</div>
+<div class="ci8">SĐT</div>
+</div> -->
+<div class="bm">
+<div class="bm1">
+<%	var page=length / 20;
+	var n = length % 20; 
+	if (n == 0){
+		for(var i = 1;i<= page;i++){ %>
+			<a href="oto?page=<%=i%>">&nbsp;<%=i%>&nbsp;</a>|
+<%      }
+	}
+	if( n != 0){
+		for(var i=1;i<= page+1;i++){%>
+			<a href="oto?page=<%=i%>">&nbsp;<%=i%>&nbsp;</a>|
+<%}}%>
+<!-- <a href="oto?page=2">&nbsp;2&nbsp;</a>|
+<a href="oto?page=3">&nbsp;3&nbsp;</a>|
+<a href="oto?page=4">&nbsp;4&nbsp;</a>|
+... -->
+</div>
+<div class="bm2">Số trang: 1/1234
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+<div id="leftcolumn">
+
+<div class="l_item">Tim theo hang</div>
+
+<div class="label_l"><a href="oto.html?type=Acura" class="inneritem">Acura</a></div>
+<div class="label_l"><a href="oto.html?type=Audi" class="inneritem">Audi</a></div>
+<div class="label_l"><a href="oto.html?type=Bmw" class="inneritem">BMW</a></div>
+<div class="label_l"><a href="oto.html?type=Chevrolet" class="inneritem">Chevrolet</a></div>
+<div class="label_l"><a href="oto.html?type=Daewoo" class="inneritem">Daewoo</a></div>
+
+<div class="label_l"><a href="oto.html?type=Daihatsu" class="inneritem">Daihatsu</a></div>
+<div class="label_l"><a href="oto.html?type=Fiat" class="inneritem">Fiat</a></div>
+<div class="label_l"><a href="oto.html?type=Ford" class="inneritem">Ford</a></div>
+<div class="label_l"><a href="oto.html?type=Honda" class="inneritem">Honda</a></div>
+<div class="label_l"><a href="oto.html?type=Hyundai" class="inneritem">Hyundai</a></div>
+<div class="label_l"><a href="oto.html?type=Isuzu" class="inneritem">Isuzu</a></div>
+<div class="label_l"><a href="oto.html?type=Kia" class="inneritem">Kia</a></div>
+<div class="label_l"><a href="oto.html?type=LandRover" class="inneritem">LandRover</a></div>
+<div class="label_l"><a href="oto.html?type=Lexus" class="inneritem">Lexus</a></div>
+<div class="label_l"><a href="oto.html?type=Mazda" class="inneritem">Mazda</a></div>
+<div class="label_l"><a href="oto.html?type=Mercedes Benz" class="inneritem">Mercedes Benz</a></div>
+<div class="label_l"><a href="oto.html?type=Mitsubishi" class="inneritem">Mitsubishi</a></div>
+<div class="label_l"><a href="oto.html?type=Nissan" class="inneritem">Nissan</a></div>
+<div class="label_l"><a href="oto.html?type=Peugeot" class="inneritem">Peugeot</a></div>
+<div class="label_l"><a href="oto.html?type=Porsche" class="inneritem">Porsche</a></div>
+<div class="label_l"><a href="oto.html?type=Renault" class="inneritem">Renault</a></div>
+<div class="label_l"><a href="oto.html?type=Ssangyong" class="inneritem">Ssangyong</a></div>
+<div class="label_l"><a href="oto.html?type=Suzuki" class="inneritem">Suzuki</a></div>
+<div class="label_l"><a href="oto.html?type=Toyota" class="inneritem">Toyota</a></div>
+<div class="label_l"><a href="oto.html?type=Volkswagen" class="inneritem">Volkswagen</a></div>
+
+
+
+</div>
+
+<div id="rightcolumn">
+
+<div class="login_box">
+
+<form name="login" method="post" action="">
+<div class="login0">username</div>
+<input type="text" name="uname" class="login1" />
+<div class="login0">password</div>
+<input type="password" name="pass" class="login1" />
+<div class="login2">
+<button type="submit" class="l_button" >Đăng nhập</button>
+<button type="button" class="l_button" onclick="window.location.href='register.html'">Đăng ký</button>
+</div>
+</form>
+</div>
+
+<div class="label_r"><a href="http://google.com/" class="inneritem">Đăng tin bán</a></div>
+<div class="label_r"><a href="http://google.com/" class="inneritem">Đăng tin mua</a></div>
+<div class="label_r"><a href="http://google.com/" class="inneritem">Hướng dẫn sử dụng</a></div>
+
+
+
+<div class="label_salon"><div class="salon1"><a href="http://google.com/" class="inneritem">Tên salon</a></div><div class="salon2">Giới thiệu</div></div>
+<div class="label_salon"><div class="salon1"><a href="http://google.com/" class="inneritem">Tên salon</a></div><div class="salon2">Giới thiệu</div></div>
+<div class="label_salon"><div class="salon1"><a href="http://google.com/" class="inneritem">Tên salon</a></div><div class="salon2">Giới thiệu</div></div>
+</div>
+
+<div id="footer">FOOTER</div>
+
+</div>
+
+</body>
+</html>

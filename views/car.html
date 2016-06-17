@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+@import url("css/car.css");
+
+body{
+	background: #FFF;
+	color: #000000;
+}
+
+</style>
+<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+<div id="maincontainer">
+
+<div id="topsection"><div class="innertube"><img src="icons.gif" href="google.com" ></a></div></div>
+
+<div id="contentwrapper">
+
+
+<div id="leftcolumn">
+	<div class="c_title">
+    <div class="title_name"><%=carInf.ten_xe%> - <%=carInf.gia_VND%> triệu</div> 
+    <div class="title_time">Ngày cập nhật 25/7/2015</div>
+    
+    </div>
+    
+    
+    
+ 	<div id="TabbedPanels1" class="TabbedPanels">
+    <ul class="TabbedPanelsTabGroup">
+      <li class="TabbedPanelsTab" tabindex="0">Thông số cơ bản</li>
+      <li class="TabbedPanelsTab" tabindex="0">An toàn</li>
+      <li class="TabbedPanelsTab" tabindex="0">Tiện nghi</li>
+      <li class="TabbedPanelsTab" tabindex="0">Thông số kỹ thuật</li>
+    </ul>
+    <div class="TabbedPanelsContentGroup">
+      <div class="TabbedPanelsContent">
+      	<div class="c_optionl">
+       		<div class="c_content">Thông số cơ bản</div>
+       		<div class="c_item">
+            	<div class="c_label">Xuất xứ :</div>
+                <div class="c_input"><%=carInf.xuat_xu%></div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label">Tình trạng :</div>
+                <div class="c_input"><%=carInf.tinh_trang%></div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label">Dòng xe :</div>
+                <div class="c_input"><%=carInf.dong_xe%></div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label">Số km đã đi :</div>
+                <div class="c_input"><%=carInf.so_km_da_di%> Km</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label">Màu ngoại thất :</div>
+                <div class="c_input"><%=carInf.mau_ngoai_that%></div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label">Số cửa :</div>
+                <div class="c_input"><%=carInf.so_cua%> </div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label">Số chỗ ngồi :</div>
+                <div class="c_input"><%=carInf.so_cho_ngoi%></div>
+            </div>
+        </div>
+        <div class="c_optionr">
+        	<div class="c_content">Nhiên liệu</div>
+       		<div class="c_item">
+            	<div class="c_label">Nhiên liệu :</div>
+                <div class="c_input"><%=carInf.nhien_lieu%></div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label">Hệ thống nạp nhiên liệu :</div>
+                <div class="c_input"><%=carInf.he_thong_nap_nhien_lieu%></div>
+            </div>
+            <div class="c_content">Hộp số chuyển động</div>
+       		<div class="c_item">
+            	<div class="c_label">Hộp số :</div>
+                <div class="c_input"><%=carInf.hop_so%></div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label">Dẫn động :</div>
+                <div class="c_input"><%=carInf.dan_dong%></div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label">Tiêu thụ nhiên liệu :</div>
+                <div class="c_input"><%=carInf.tieu_thu_nhien_lieu%></div>
+            </div>
+        </div>
+        <div class="c_info1">Thông tin mô tả</div>
+        <div class="c_info2"><%=carInf.thong_tin_mo_ta%></div>
+        </div>
+        
+      <div class="TabbedPanelsContent">
+      	<div class="c_optionl">
+       		<div class="c_content">Túi khí an toàn</div>
+       		<div class="c_item">
+            	<div class="c_label2">Túi khí cho người lái :</div>
+                <div class="c_input2">x1</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Túi khí cho hành khách phía trước :</div>
+                <div class="c_input2">x2</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Túi khí cho hành khách phía sau :</div>
+                <div class="c_input2">x3</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Túi khí hai bên hàng ghế :</div>
+                <div class="c_input2">x4</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Túi khí treo phía trên 2 hàng ghế trước và sau :</div>
+                <div class="c_input2">x5</div>
+            </div>
+            <div class="c_content">Phanh - điều khiển</div>
+       		<div class="c_item">
+            	<div class="c_label2">Chống bó cứng phanh (ABS) :</div>
+                <div class="c_input2">x6</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Phân bố lực phanh điện tử (EBD) :</div>
+                <div class="c_input2">x7</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Trợ lực phanh khẩn cấp (EBA) :</div>
+                <div class="c_input2">x8</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Tự động cân bằng điện tử (ESP) :</div>
+                <div class="c_input2">x9</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Điều khiển hành trình :</div>
+                <div class="c_input2">x10</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2"> Hỗ trợ cảnh báo lùi :</div>
+                <div class="c_input2">x11</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2"> Hệ thống kiểm soát trượt :</div>
+                <div class="c_input2">x12</div>
+            </div>
+        </div>
+        <div class="c_optionr">
+        	<div class="c_content">Khóa chống trộm</div>
+       		<div class="c_item">
+            	<div class="c_label2">Chốt cửa an toàn :</div>
+                <div class="c_input2">x13</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Khóa cửa tự động :</div>
+                <div class="c_input2">x14</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Khóa cửa điện điều khiển từ xa :</div>
+                <div class="c_input2">x15</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2"> Khóa động cơ :</div>
+                <div class="c_input2">x16</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Hệ thống báo trộm ngoại vi :</div>
+                <div class="c_input2">x17</div>
+            </div>
+            <div class="c_content">Các thông số khác</div>
+       		<div class="c_item">
+            	<div class="c_label2">Đèn sương mù :</div>
+                <div class="c_input2">x18</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Đèn cảnh báo thắt dây an toàn :</div>
+                <div class="c_input2">x19</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Đèn phanh phụ thứ 3 lắp cao :</div>
+                <div class="c_input2">x20</div>
+            </div>
+        </div></div>
+      <div class="TabbedPanelsContent">
+		<div class="c_optionl">
+       		<div class="c_content">Thiết bị tiêu chuẩn</div>
+       		<div class="c_item">
+            	<div class="c_label2">Thiết bị định vị :</div>
+                <div class="c_input2">x1</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Cửa sổ nóc :</div>
+                <div class="c_input2">x2</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Kính chỉnh điện :</div>
+                <div class="c_input2">x3</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Tay lái trợ lực:</div>
+                <div class="c_input2">x4</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label">Ghế:Chất liệu,tiện nghi.. :</div>
+                <div class="c_input">----x5----</div>
+            </div>
+       		<div class="c_item">
+            	<div class="c_label2">Điều hòa trước :</div>
+                <div class="c_input2">x6</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Điều hòa sau :</div>
+                <div class="c_input2">x7</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Hỗ trợ xe tự động :</div>
+                <div class="c_input2">x8</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Sấy kính sau :</div>
+                <div class="c_input2">x9</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Quạt kính phía sau :</div>
+                <div class="c_input2">x10</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Kính mầu :</div>
+                <div class="c_input2">x11</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label2">Màn hình LCD :</div>
+                <div class="c_input2">x12</div>
+            </div>
+			<div class="c_item">
+            	<div class="c_label2">Thiết bị giải trí Audio, Video :</div>
+                <div class="c_input2">x13</div>
+            </div>
+        </div>
+		<div class="c_optionr">
+			<div class="c_content">Thiết bị khác</div>
+		</div>
+	  </div>
+      <div class="TabbedPanelsContent">
+      	<div class="c_optionl">
+       		<div class="c_content">Kích thước/Trọng lượng</div>
+       		<div class="c_item">
+            	<div class="c_label">Dài x Rộng x Cao :</div>
+                <div class="c_input">----x1----</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label">Chiều dài cơ sở :</div>
+                <div class="c_input">----x2----</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label">Chiều rộng cơ sở trước/sau :</div>
+                <div class="c_input">----x3----</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label">Trọng lượng không tải :</div>
+                <div class="c_input">----x4----</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label">Dung tích bình nhiên liệu :</div>
+                <div class="c_input">----x5----</div>
+            </div>
+            <div class="c_content">Động cơ</div>
+            <div class="c_item">
+            	<div class="c_label">Động cơ :</div>
+                <div class="c_input">----x6----</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label">Kiểu động cơ :</div>
+                <div class="c_input">----x7----</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label">Dung tích xi lanh :</div>
+                <div class="c_input">----x8----</div>
+            </div>
+        </div>
+        <div class="c_optionr">
+        	<div class="c_content">Phanh - Giảm xóc - Lốp</div>
+            <div class="c_item">
+            	<div class="c_label">Phanh :</div>
+                <div class="c_input">----x9----</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label">Giảm xóc :</div>
+                <div class="c_input">----x10----</div>
+            </div>
+             <div class="c_item">
+            	<div class="c_label">Lốp xe :</div>
+                <div class="c_input">----x11----</div>
+            </div>
+            <div class="c_item">
+            	<div class="c_label">Vành mâm xe :</div>
+                <div class="c_input">----x12----</div>
+            </div>
+            <div class="c_content">Các thông số khác</div>
+            
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="tool_b">
+      <a href="http://google.com" class="tool_button">Gửi tin cho người bán</a>
+      <a href="http://google.com" class="tool_button">Báo tin đã bán/đăng sai</a>
+      <a href="http://google.com" class="tool_button">Lưu tin</a>
+      <a href="http://google.com" class="tool_button">In tin này</a>
+  </div>
+</div>
+
+
+<div id="rightcolumn">
+<div id="s_content">
+<form name="search1" method="post" action="" class = "s_box">
+<div class="s_box1">
+<input type="radio" value="mua"  name="search"  checked>Tin bán OTO
+ <input type="radio" value="ban"  name="search" >Tin mua OTO
+ </div>
+ <input type="text" name="s_text" class="s_box2" />
+ <input type="submit" class="s_button" value="Tim"/>
+</form>
+</div>
+
+
+
+<div class="img_content">
+    <div class="main_img"><img src="a.jpg" height="250" width="345"/></div>
+    
+    <div class="second_img"><img src="images/a.jpg" height="47" width="63"/></div>
+    <div class="second_img"><img src="images/a.jpg" height="47" width="63"/></div>
+    <div class="second_img"><img src="images/a.jpg" height="47" width="63"/></div>
+    <div class="second_img"><img src="images/a.jpg" height="47" width="63"/></div>
+    <div class="second_img"><img src="images/a.jpg" height="47" width="63"/></div>
+    <div class="second_img"><img src="images/a.jpg" height="47" width="63"/></div>
+    <div class="second_img"><img src="images/a.jpg" height="47" width="63"/></div>
+    <div class="second_img"><img src="images/a.jpg" height="47" width="63"/></div>
+    <div class="second_img"><img src="images/a.jpg" height="47" width="63"/></div>
+	<div class="second_img"><img src="images/a.jpg" height="47" width="63"/></div>
+    
+</div>
+<div class="contact">
+<center><b>Thông tin liên hệ</b></center><br />
+Người bán: <span class="user_contact"><%=carInf.lien_he.name%></span><br />
+Địa chỉ: <span class="addr_contact"><%=carInf.lien_he.address%></span><br />
+Số điện thoại:<br /> 
+<span class="phone_contact"><%=carInf.lien_he.phone_1%></span>
+<span class="phone_contact"><%=carInf.lien_he.phone_2%></span>
+
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div id="footer">FOOTER</div>
+
+</div>
+
+<script type="text/javascript">
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+</script>
+</body>
+</html>

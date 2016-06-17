@@ -1,0 +1,18 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "My first project",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/blue94hp/myproject.git"
+  },
+  "dependencies": {
+    "mongodb": "~2.0",
+    "ejs": "~1.0.0",
+    "express": "~4.0.0"
+  },
+  "author": "Anh Tuan",
+  "license": "Apache 2.0",
+  "homepage": "https://github.com/blue94hp/myproject.git"
+}
